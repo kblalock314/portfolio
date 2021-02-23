@@ -1,0 +1,79 @@
+{% extends "index.html" %}
+{% block title %}SQL Queries{% endblock %}
+{% block content %} 
+<section class="hero">
+    <div class="hero-inner">
+        <div>
+            <header>
+            <h1 class="page-header">Analyzing Internal Team Data & KPIs</h1>
+            </header>
+        </div>
+    </div>    
+</section>
+<section class="col-section"> 
+    <div class="flex-grid">
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h3>The Project</h3>
+                <p style="margin-bottom:0px;">I helped lead and facilitate an Empathy Mapping workshop for the Phoenix Design Thinking & Innovative Collective meetup group.</p>
+            </div>
+        </div>
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h3>Purpose</h3>
+                <p style="margin-bottom:0px;">We helped attendees understand what empathy mapping is and how to use it with their teams.</p>
+            </div>
+        </div>
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h3>Skills</h3>
+                <p style="margin-bottom:0px;">Presenting to groups, facilitating group discussions, persona creation, empathy mapping, qualitative user analysis </p>
+            </div>    
+        </div>
+</section>
+<section class="col-section-padding-stack" style="background-color:#FFFFFF;">  
+    <div class="column-50-stack">
+        <div class="column-content">
+          <h2>Questions to Answer</h2>
+          <p>My manager asked us to analyze the Marketing Operations team data to help him answer the following questions:</p>
+           <ul class="ul-bullets" style="line-height:1.2">
+                <li>What percentage of UX tickets hit published without any points? Is that number increasing or decreasing over time?</li>
+                <li>What is the distribution of points across across each role? (e.g. what percentage of copywriting tickets are small vs medium vs large?)</li>
+                <li>What is the time to market (in progress, ready to published) for each role? How does this change according to ticket size?</li> 
+                <li>How do the actual time to market numbers compare to the estimated SLAs documented on the confluence page?</li>
+            </ul>
+        </div>
+    </div>
+    <div class="column-50-stack-image">
+        <div class="column-image-container-stack">
+            <img src="static/assets/valley-chevy/keyword-research.PNG" class="img-border-shadow" style="margin:0;">
+        </div>
+    </div>
+</section>
+<section class="col-section-padding">
+    <div class="row-content-container">
+        <div class="column-block-20px">
+            <h2>The Prep Work</h2>
+            <p>The data needed to be cleaned up before I could convert it to a SQL database because it contained numerous data errors, as well as a mixture of various data types in certain columns. </p>     
+        </div>
+    </div>
+    <div class="row-image-container">
+        <img src="static\assets\sql-queries\bad-data.PNG" style="max-width:100%;">
+    </div>    
+</section>
+<section class="col-section-padding" style="background-color:#FFFFFF;">
+    <div class="row-content-container">
+        <div class="column-block-20px">
+            <h2>Step 1: Clean the Data</h2>
+            <p>To get started, I used the Find All feature to find all of the errors in the data. Once I figured out how to fix each formula to remove the errors it generated, I used the Replace All feature to quickly update hundreds of cells using that same formula.  </p>     
+        </div>
+    </div>
+    <div class="row-image-container">
+        <img src="static\assets\sql-queries\find-and-replace.PNG" style="max-width:100%;">
+    </div>    
+</section>
+<section class="banner">
+    <h1 class="banner-text">Want to see more projects?</h1>
+    <a href="/portfolio"><button>View My Portfolio</button></a> 
+</section>      
+{% endblock %}

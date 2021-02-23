@@ -1,0 +1,1778 @@
+.page {
+    display: flex;
+}
+
+.content {
+    position: relative;
+    padding-left: 0px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    }
+
+.page-header {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.content-plus-footer {
+    display: block;
+    width: 100%;
+}
+
+/* Hero, header and banner components*/
+
+.hero {
+    width: 100%;
+    margin: auto; 
+    background-color: #0f0e0e;
+}
+    
+.hero-inner {
+    border: 3px solid #FFFFFF;
+}
+
+.hero, .hero-inner {
+        padding: 15px;
+}
+
+@media screen and (min-width: 700px) {
+    .hero, .hero-inner {
+        padding: 20px;
+    }}
+
+.hero-content-block {
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+    .hero-content-block {
+        padding-left: 60px;
+        padding-right: 60px;
+}}
+
+@media screen and (min-width: 900px) {
+    .hero-content-block {
+        padding-left: 100px;
+        padding-right: 100px;
+}}
+
+@media screen and (min-width: 1200px) {
+    .hero-content-block {
+        padding-left: 200px;
+        padding-right: 200px;
+}}
+
+@media screen and (min-width: 1440px) {
+    .hero-content-block {
+        padding-left: 300px;
+        padding-right: 300px;
+        max-width: 1440px;
+}}
+
+.banner {
+    width: 100%;
+    margin: auto;
+    padding: 40px 10px 40px;
+    text-align:center;
+    background-color:#6494AA;
+    color: #000000;
+    }
+
+@media screen and (min-width: 700px) {
+    .banner {
+        padding: 40px 30px 40px;
+    }}
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        padding: 40px 60px 40px;
+    }}
+
+.banner-text {
+    padding-bottom:25px
+}
+
+    .section-header {
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px; 
+    width: 100%;
+    margin: auto; 
+}
+
+@media screen and (min-width: 700px) {
+    .section-header {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }}
+
+@media screen and (min-width: 900px) {
+    .section-header {
+        padding-left: 50px;
+        padding-right: 50px; 
+    }}    
+
+@media screen and (min-width: 1440px) {
+    .section-header {
+        padding-left: 100px;
+        padding-right: 100px; 
+    }}    
+
+@media screen and (min-width: 2560px) {
+    .section-header {
+        padding-left: 500px;
+        padding-right: 500px; 
+    }}               
+
+/* For columns with images where I just need 30px of padding on mobile, and minimal left and right padding*/
+
+.image-block-30px {
+    padding: 0px 15px 30px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    align-items: center;
+}    
+
+@media screen and (min-width: 700px) {
+    .image-block-30px {
+        padding: 0px 0px 30px;
+    }
+}
+
+/* Use for secitons with columns when extra padding above and below module isn't necessary */
+
+.col-section {
+    padding: 40px 0px 10px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+    .col-section {
+        padding: 40px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .col-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .col-section {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .col-section {
+        padding-left: 270px;
+        padding-right: 270px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .col-section {
+        padding-left: 670px;
+        padding-right: 670px;
+    }
+}
+
+/* Use for 3 column modules when you want the extra padding on top and bottom, and the columns to stack on mobile only */
+.col-section-padding {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+    .col-section-padding {
+        padding: 60px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .col-section-padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .col-section-padding {
+        padding: 60px 90px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .col-section-padding {
+        padding: 80px 270px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .col-section-padding {
+        padding-left: 670px;
+        padding-right: 670px;
+    }
+}
+
+/* Use for 3 column modules when you want the extra padding on top and bottom, and the columns to stack on tablet and mobile */
+.col-section-padding-stack {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    .col-section-padding-stack {
+        padding: 60px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .col-section-padding-stack {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .col-section-padding-stack {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .col-section-padding-stack {
+        padding: 60px 90px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .col-section-padding-stack {
+        padding: 80px 270px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .col-section-padding-stack {
+        padding-left: 670px;
+        padding-right: 670px;
+    }
+}
+
+
+
+/* Use for modules with columns when you want the columns to reverse on mobile*/
+
+.col-section-padding-reverse {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+    .col-section-padding-reverse {
+        padding: 60px 20px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .col-section-padding-reverse {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .col-section-padding-reverse {
+        padding: 60px 90px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .col-section-padding-reverse {
+        padding: 80px 270px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .col-section-padding-reverse {
+        padding-left: 670px;
+        padding-right: 670px;
+    }
+}
+
+/* Use for modules with columns when you want the columns to reverse on mobile and stack on tablet*/
+.col-section-padding-reverse-stack {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    .col-section-padding-reverse-stack {
+        padding: 60px 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .col-section-padding-reverse-stack {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .col-section-padding-reverse-stack {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .col-section-padding-reverse-stack {
+        padding: 60px 90px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .col-section-padding-reverse-stack {
+        padding: 80px 270px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .col-section-padding-reverse-stack {
+        padding-left: 670px;
+        padding-right: 670px;
+    }
+}
+
+/*Unpopular column components */
+
+.column {
+    width: 100%;
+    height:auto;
+    margin:auto;
+}
+
+.col {
+    flex: 1;
+    flex-grow: 1;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (min-width:700px) {
+    .col {
+    padding-bottom: 0px;
+}}
+
+/* For columns that contain an image with text underneath, where I need 30px bottom padding only on mobile and 30 px and left and right always*/
+
+.column-content-block {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 0px 30px 30px;
+    }
+
+@media screen and (min-width:700px) {
+    .column-content-block {
+        padding: 0px 20px;
+    }}
+        
+@media screen and (min-width:1440px) {
+.column-content-block {
+    padding: 0px 50px;
+    }}
+
+/* For 90% columns on the left where I need margin only on right on tablet and higher */
+
+.column-content-block-left {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    padding: 0px 30px 30px;
+    }
+
+@media screen and (min-width:700px) {
+    .column-content-block-left {
+        margin: 0 auto 0 0;
+        padding: 0px 20px;
+    }}
+        
+@media screen and (min-width:1440px) {
+.column-content-block-left {
+    padding: 0px 50px;
+    }}
+
+/* For 90% columns on the right where I need margin only on left on tablet and higher */
+
+.column-content-block-right {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    padding: 0px 30px 30px;
+    }
+
+@media screen and (min-width:700px) {
+    .column-content-block-right {
+        margin: 0 0 0 auto;
+        padding: 0px 20px;
+    }}
+        
+@media screen and (min-width:1440px) {
+.column-content-block-right {
+    padding: 0px 50px;
+    }}
+
+/* No longer used? */
+
+.column-content {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding-bottom: 0px;  
+}
+
+@media screen and (min-width: 700px) {    
+.column-content {
+        padding-bottom: 0px;  
+}}
+
+/* For columns that contain only text, usually sub-text, where I need 20px of bottom padding only on mobile (the paragraph above it still has margin of 10px */
+
+.column-text-block {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 0px 30px 20px;
+}
+
+@media screen and (min-width:700px) {
+    .column-text-block {
+        padding: 0px 20px;
+}}
+        
+@media screen and (min-width:1440px) {
+    .column-text-block {
+    padding: 0px 50px;
+}}
+
+/* For columns that always need 30px of padding on the bottom, and padding on the left and right */
+
+.column-block-30px {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 0px 30px 30px;
+}
+
+@media screen and (min-width:700px) {
+    .column-block-30px {
+        padding: 0px 20px 30px;
+}}
+        
+@media screen and (min-width:1440px) {
+    .column-block-30px {
+    padding: 0px 50px 30px;
+}}
+
+/* For columns that always need 20px of padding on the bottom */
+
+.column-block-20px {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 0px 30px 20px;
+}
+
+@media screen and (min-width:700px) {
+    .column-block-20px {
+        padding: 0px 20px 20px;
+}}
+        
+@media screen and (min-width:1440px) {
+    .column-block-20px {
+    padding: 0px 50px 20px;
+}}
+
+
+/* For columns that contain an image where I only need top and bottom padding on mobile*/
+
+.column-image-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+@media screen and (min-width: 700px) {   
+.column-image-container {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}}
+
+/* For columns that contain an image only where I need top and bottom padding on mobile and tablet*/
+
+.column-image-container-stack {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+@media screen and (min-width: 700px) {   
+    .column-image-container-stack {
+        padding-top: 30px;
+        padding-bottom: 0px;
+}}
+ 
+
+@media screen and (min-width: 1440px) {   
+.column-image-container-stack {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}}
+
+
+/* For columns that contain an image when I need top and bottom padding on mobile, and only bottom padding everywhere else*/
+
+.column-img-block {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 0px 15px 30px;
+    text-align: center;
+    }
+
+@media screen and (min-width:700px) {
+    .column-img-block {
+        padding: 0px 20px;
+    }}
+        
+@media screen and (min-width:1440px) {
+.column-img-block {
+    padding: 0px 50px;
+    }}
+
+
+/* For columns that contain only a title and an image */
+
+.column-title-img {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 30px 0px 0px;
+}
+    
+@media screen and (min-width:700px) {
+    .column-title-img {
+        padding: 30px 20px 0px;
+}}
+            
+@media screen and (min-width:1440px) {
+    .column-title-img {
+        padding: 30px 50px 0px;
+}}
+
+.column-img-subtitle {
+    padding-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+}
+
+/* For section with two columns, where the first column should be double the size of the other */
+
+.col-double {
+    flex: 1;
+    flex-grow: 2;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+
+@media screen and (min-width: 700px) {
+    .col-double {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;   
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .col-double {
+    padding-left: 20px;   
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .col-double {
+    padding-left: 50px;   
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .col-double {
+    padding-left: 50px;   
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .col-double {
+    padding-left: 50px;   
+    }
+}
+
+/* 3 column flex grid components */
+
+.flex-grid {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .flex-grid {
+      display: flex;
+    }
+}
+
+.flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-centered {
+    text-align: center;
+    flex: 1;
+}
+
+/* 60 30 45 column components */
+
+.column-60, .column-50, .column-30 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+@media screen and (min-width: 700px) {
+    .column-30 {
+        width: 33%;
+        margin: auto;
+        text-align: left;
+        padding: 0px 20px;
+}}
+
+@media screen and (min-width: 1440px) {
+    .column-30 {
+        padding: 0px 50px;
+}}
+
+@media screen and (min-width: 700px) {
+    .column-50 {
+        width: 50%;
+        text-align: left;
+        padding: 0px 20px;
+}}
+
+@media screen and (min-width: 1440px) {
+    .column-50 {
+        padding: 0px 50px;
+}}
+
+
+@media screen and (min-width: 700px) {
+    .column-60 {
+        width: 66%;
+        margin-left: 0px;
+        text-align: left;
+        padding: 0px 20px;
+}}
+
+@media screen and (min-width: 1440px) {
+    .column-60 {
+        padding: 0px 50px;
+}}
+
+/* For columns with images that should have limited padding on mobile */
+
+.column-50-image {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+@media screen and (min-width: 700px) {
+    .column-50-image {
+        width: 50%;
+        text-align: left;
+        padding: 0px 20px;
+}}
+
+@media screen and (min-width: 1440px) {
+    .column-50-image {
+        padding: 0px 50px;
+}}
+
+/* For columns that should stack on tablet */
+
+.column-50-stack {
+    width: 100%;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+@media screen and (min-width: 700px) {
+    .column-50-stack {
+        padding: 0px 20px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .column-50-stack {
+        width: 50%;
+        padding: 0px 50px;
+    }
+}
+
+/* For columns that should stack AND center align on tablet */
+
+.column-50-stack-center {
+    width: 100%;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+@media screen and (min-width: 700px) {
+    .column-50-stack-center {
+        padding: 0px 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .column-50-stack-center {
+        width: 50%;
+        padding: 0px 50px;
+        text-align: left;
+    }
+}
+
+/* For columns with images that should stack on tablet */
+
+.column-50-stack-image {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+@media screen and (min-width: 700px) {
+    .column-50-stack-image {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .column-50-stack-image {
+        width: 50%;
+        padding: 0px 50px;
+    }
+}
+
+/* Shouldn't really need to use row, but keeping just in case */
+
+.row {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/*Use row-content-container to add padding around text blocks and center text*/
+
+.row-content-container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+@media only screen and (min-width: 700px) {
+    .row-content-container {
+        max-width: 1200px;
+    }
+}     
+
+/* For larger images where I need 30px of padding on all breakpoints*/
+
+.row-image-container-30 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding: 0px 15px 30px;
+}
+
+@media screen and (min-width: 700px) {
+.row-image-container-30 {
+    padding: 0px 20px 30px;
+    }
+}
+
+/* For larger images where I need padding on the bottom on mobile only */
+
+.row-image-container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding: 0px 15px 30px;
+}
+
+@media screen and (min-width: 700px) {
+.row-image-container {
+    padding: 0px 20px
+    }
+}
+
+
+.scroll-view {
+width:100%; 
+height:200px; 
+overflow: scroll; 
+border:solid black 1px; 
+box-shadow: 2px 2px #DCDCDC;
+margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+    .scroll-view {
+        height: 300px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .scroll-view {
+        height: 485px
+    }
+}
+
+/* For scroll views that are taller on all breakpoints */
+
+.scroll-view-tall {
+    width:100%; 
+    height:400px; 
+    overflow: scroll; 
+    border:solid black 1px; 
+    box-shadow: 2px 2px #DCDCDC;
+    margin-bottom: 30px;
+}
+
+    
+@media screen and (min-width: 700px) {
+    .scroll-view-tall {
+        height: 300px;
+        margin-bottom: 0px;
+    }
+}
+    
+@media screen and (min-width: 900px) {
+    .scroll-view-tall {
+        height: 485px
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+ ​
+
+/* Section component for portfolio page */
+.portfolio-flexbox {
+    display: block;
+}
+
+@media screen and (max-width:699px) {
+    .portfolio-flexbox {
+        margin: auto;
+        width: 100%;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .portfolio-flexbox {
+        padding-top: 80px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .portfolio-flexbox {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .portfolio-flexbox {
+        padding: 100px 80px 60px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .portfolio-flexbox {
+        padding: 80px 300px 40px;
+    }
+}
+
+
+@media screen and (min-width: 2560px) {
+    .portfolio-flexbox {
+        padding-left: 500px;
+        padding-right: 500px;
+    }
+}
+
+/* Modal popup components */
+
+.modal {
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+    opacity: 0.5px;
+}
+
+.modal-hidden {
+    display: none;
+}    
+    
+.modal-close-bar {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: -3rem;
+        margin-top: -2rem;
+        cursor: pointer;
+}
+
+.modal-contents {
+        background-color: #fff;
+        padding: 3rem 4rem;
+}
+
+.modal-contents input[type=email] {
+    width: 100%;
+    padding: .5rem;
+}
+
+/* Database table components */
+
+.sqltable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.sqltable thead tr {
+    background-color: black;
+    text-align: left;
+    color: white;
+    min-width: 30vw;
+}
+
+.table thead tr, .table {
+    min-width: 30vw;
+    text-align: left;  
+}
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+.slideshare {
+    width:100%; 
+    height: 200px; 
+    border:1px solid #CCC; 
+    border-width:1px; 
+    margin-bottom:5px; 
+    max-width: 100%;
+}
+
+@media screen and (min-width:1024px) {
+    .slideshare {
+        height:300px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .slideshare {
+        height:485px;
+    }
+}
+
+.img-card {
+    border: solid 1px #000000;
+    border-radius:5px;
+}
+
+/* To put black border around Vimeo border */
+
+.video-block {
+    width:640px; 
+    height:190px;
+    max-width:100%;
+    object-fit: fill;
+}
+
+@media screen and (min-width: 700px){
+    .video-block {
+        height:170px;
+}}
+
+@media screen and (min-width: 1024px){
+    .video-block {
+        height:240px;
+}}
+
+@media screen and (min-width: 1200px){
+    .video-block {
+        height:280px;
+}} 
+
+@media screen and (min-width: 1440px){
+    .video-block {
+        height:280px;
+}} 
+
+@media screen and (min-width: 1900px){
+    .video-block {
+        height:315px;
+}}    
+
+@media screen and (min-width: 2560px){
+    .video-block {
+        height:265px;
+}}    
+
+/* To put a black border around a Vimeo border specific for UserTesting.com clips */
+
+.user-testing-block {
+    width:640; 
+    height:190px;
+    max-width:100%;
+    object-fit: fill;
+}
+
+@media screen and (min-width: 700px){
+    .user-testing-block {
+        height:180px;
+}}
+
+@media screen and (min-width: 1024px){
+    .user-testing-block {
+        height:260px;
+}}
+
+@media screen and (min-width: 1200px){
+    .user-testing-block {
+        height:290px;
+}} 
+
+@media screen and (min-width: 1440px){
+    .user-testing-block {
+        height:300px;
+}} 
+
+@media screen and (min-width: 1800px){
+    .user-testing-block {
+        height:340px;
+}} 
+
+@media screen and (min-width: 2200px){
+    .user-testing-block {
+        height:300px;
+}} 
+
+/* For portfolio page */
+
+.project {
+    padding-bottom:40px;
+    max-width: 400px;
+}
+
+@media screen and (min-width:768px){
+    .project {
+    max-width:300px;
+}}
+
+@media screen and (min-width:1024px){
+    .project {
+    max-width:400px;
+}}
+
+@media screen and (min-width:1260px){
+    .project {
+    max-width:500px;
+}}
+
+@media screen and (min-width:1400px){
+    .project {
+    max-width:400px;
+}}
+
+.project-name {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+    color: #000;
+}
+
+.project-skills {
+    margin-top: .5rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    color: #000;
+}
+
+.project-preview {
+    position: relative;
+    padding: 20px 0px;
+}
+
+.project-card {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px#adadad;
+    padding-bottom: 20px;
+    background-color: #FFFF;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px 0px;
+}  
+
+.project-card:hover .overlay {
+    opacity: .8;
+}
+
+.text {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.preview-image {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.preview {
+    position:relative;
+}
+
+/* For project page image overlay */
+
+.project-container {
+    position: relative;
+    width: 50%;
+}
+
+/* Contact form elements */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    max-width: 400px;
+}
+
+.form {
+    border-radius:5px;
+    background-color:#f2f2f2;
+    padding:20px;
+    border: solid 1px #65696cff;
+    min-width:300px;
+}
+  
+@media screen and (min-width:1024px){
+    .form {
+        min-width:400px}
+    }
+
+/* For results sections */
+
+.stat {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    padding-top: 30px;
+}
+
+.stat-text {
+    font-size: .98rem;  
+}
+
+@media screen and (min-width:700px){
+    .stat-text {
+        font-size: .85rem;
+}}
+
+@media screen and (min-width:1024px){
+    .stat-text {
+        font-size: 1.1rem;
+}}
+
+.stat-icon {
+    width: 120px; 
+    height: 120px;
+}
+
+
+/* Components for Resume page */    
+
+.resume-company-text {
+    color: #6494AA;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.resume-section-header {
+    font-size: 1.9rem;
+    font-weight: 600;  
+}
+
+@media screen and (min-width:700px) {
+.resume-section-header {
+    font-size: 2.5rem;
+    font-weight: 600;  
+}}
+
+@media screen and (min-width:700px) {
+    .resume-section-header {
+        font-size: 2.3rem;
+        font-weight: 600;  
+    }}
+    
+.resume-job-title {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;    
+}
+
+@media screen and (min-width:700px) {
+    .resume-job-title {
+        font-size: 1.2rem;
+        font-weight: 600;  
+    }}
+
+@media screen and (min-width:1024px) {
+    .resume-job-title {
+        font-size: 1.4rem;
+        font-weight: 600;  
+}}    
+
+/* Container for skill bars on resume page */
+.skill-bar {
+    width: 100%; 
+    background-color: #ddd; 
+    padding: 0px;
+  }
+  
+  .skill-name {
+      margin-top: .5rem;    
+      margin-bottom: .5rem;
+      line-height: 1;
+      text-align:left;
+  }
+  
+  .skills {
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    color: white; 
+    font-weight: 600;
+    padding-right: 4px;
+  }
+  
+  .user-research {width: 70%; background-color: #a65355ff;}  
+  .user-testing {width: 70%; background-color: #E9B872;}
+  .data-analysis {width: 60%; background-color: #6494AA;} 
+  .content-strategy {width: 90%; background-color: #E9B872;}
+  .copywriting {width: 90%; background-color: #a65355ff;}
+  .content-editing {width: 90%; background-color: #E9B872;}
+  .seo {width: 70%; background-color: #6494AA;} 
+  .content-marketing {width: 70%; background-color: #E9B872;}
+  .website-editing {width: 60%; background-color: #a65355ff;}
+  .troubleshooting {width: 60%; background-color: #E9B872;}
+  .html {width: 70%; background-color: #6494AA;} 
+  .css {width: 70%; background-color: #E9B872;}
+  .js {width: 40%; background-color: #a65355ff;} 
+  .python {width: 40%; background-color: #E9B872;}
+  .sql {width: 40%; background-color: #6494AA;}  
+
+/* Delete flex-sections when fully removed from modules page*/
+
+.flex-section {
+    padding: 40px 30px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+    .flex-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .flex-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .flex-section {
+        padding: 60px 120px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .flex-section {
+        padding: 80px 300px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .flex-section {
+        padding-left: 700px;
+        padding-right: 700px;
+    }
+}
+
+/* Use flex-section-stack when column should stack on tablet*/
+
+.flex-section-stack {
+    padding: 40px 30px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+    .flex-section-stack {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .flex-section-stack {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .flex-section-stack {
+        padding: 60px 120px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .flex-section-stack {
+        padding: 80px 300px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .flex-section-stack {
+        padding-left: 700px;
+        padding-right: 700px;
+    }
+}
+
+/* For sections that should reverse the column order on mobile */
+
+.flex-section-reverse {
+    padding: 40px 30px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    .flex-section-reverse {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .flex-section-reverse {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .flex-section-reverse {
+        padding-left: 120px;
+        padding-right: 120px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .flex-section-reverse {
+        padding: 80px 300px;
+    }
+}
+
+
+@media screen and (min-width: 2560px) {
+    .flex-section-reverse {
+        padding-left: 700px;
+        padding-right: 700px;
+    }
+}
+
+/* For sections that should reverse the column order on mobile AND should stack on tablet - no longer needed, use col-section-padding-reverse-stack instead */
+
+.flex-section-reverse-stack {
+    padding: 40px 30px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+    .flex-section-reverse-stack {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .flex-section-reverse-stack {
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .flex-section-reverse-stack {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .flex-section-reverse-stack {
+        padding: 80px 300px;
+    }
+}
+
+
+@media screen and (min-width: 2560px) {
+    .flex-section-reverse-stack {
+        padding-left: 700px;
+        padding-right: 700px;
+    }
+}
+
+
+/* For persona gallery on /emapthy-mapping page */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .gallery-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding: 0px 15px 0px;
+    margin-bottom: 30px;
+    max-width: 1100px;
+}
+
+@media screen and (min-width: 700px) {
+.gallery-container {
+    padding: 0px 20px;
+    margin-bottom: 0px;
+    }
+}
+
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding:0px  10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+/* Position the "prev button" to the left */
+    .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+    
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    padding: 2px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+.slideshare-container {
+    width:100%; 
+    height:210px;
+    margin:auto;
+}
+
+@media screen and (min-width:700px) {
+    .slideshare-container {
+        height:300px;
+        width:500px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .slideshare-container {
+        width:800px; 
+        height:490px;
+    }
+}
+
+.iframe-container {
+    padding-top: 217px;
+    position: relative;
+    width: 100%;
+    height: 0;
+    margin: auto;
+}    
+
+@media screen and (min-width:700px) {
+.iframe-container {
+    padding-top: 376px;
+  }
+}
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #CCC;
+    max-width: 598px;
+    max-height: 376px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+iframe {
+    border: solid 1px #000000;
+    box-shadow: 2px 2px #DCDCDC;
+}

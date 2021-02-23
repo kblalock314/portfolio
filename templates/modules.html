@@ -1,0 +1,157 @@
+{% extends "index.html" %}
+{% block title %}Modules{% endblock %}
+{% block content %} 
+<div class="hero">
+    <div class="hero-inner">
+        <div>
+            <header>
+            <h1 class="page-header"> Components I Can Build </h1>
+            </header>
+        </div>
+    </div>    
+</div>
+<section class="section-header" style="text-align:center">
+    <h2>Modal Popup</h2>
+    <p> This is an example of a modal popup I coded with Javascript, HTML and CSS. </p>
+</section>
+<section class="banner" style="color:#000000;text-align:center;background-color:#6494AA;">
+    <h1>I can build you a website!</h1>
+    <br>
+    <button id="show-modal">Learn More</button> 
+</section>    
+<div class="modal modal-hidden" style="text-align:center;">
+    <div class="modal-contents">
+        <div class="modal-close-bar">
+            <span>X</span>
+        </div>    
+        <p style="margin-top:1rem;">Please enter your email address to find out more.</p>
+        <form id="learn-more">
+            <input type="email" placeholder="Type your email here">
+                <button>Submit</button>
+        </form>
+    </div>
+</div>
+<div class="flex-section">
+    <div class="row">
+        <div class="row-content-container">
+            <h2 style="text-align:center;">This is a stacked section</h2>
+            <p>More text can go here. This would provide more details about the section.</p> 
+            <p>I worked closely with the Web Designer to start envisioning and designing the new landing pages. During this process, I reviewed a lot of case studies and primary research online to make strategic decisions about the pages’ layout and content.</p> 
+            <p>I also researched our competitors landing pages to analyze their strategies and find out how we could outperform them. Next, I shared my findings and recommendations with the Web Designer and we worked together to create a mockup of the landing page.</p>
+        </div>    
+    </div>
+    <div class="row-image-container">
+        <img class="img-border img-full-width" src="static\assets\recruiting-case-study\wireframe.PNG">
+    </div>
+    <div class="row">
+        <div class="row-content-container">
+            <p>Even more text can go after the image. The pages looked great for the most part, but we needed to make some minor adjustments before they were completely ready to be published. For example, we needed to tweak some background colors, font sizes, and page padding. The next day, the pages were complete and ready to be published.</p>
+        </div>        
+    </div>
+</div>    
+<section class="section-header" style="text-align:center;">
+    <h2>60/30 Section</h2>
+    <p style="text-align:center;"> This is an example of a component I coded with HTML and CSS that gives the content 60% of the row width and the image 30% of the row width.</p>
+</section>
+<div class="flex-section" style="background-color:#FFFFFF;">  
+    <div class="column-60">
+        <div class="column-content">
+            <h2>Column Header</h2>
+            <p>This is a feature module that displays copy on the left and an image on the right.</p>
+            <p>I am using a flexbox layout on all screens larger than 900px. This layout enables the columns to sit side-by-side on larger screens, while also allowing the columns to stack on smaller screen sizes, without needing additional classes and settings. </p>
+            <p>The height and width of this module adjusts to fit the copy and image appropriately.</p>
+            <br>
+        </div>
+    </div>
+    <div class="column-30">
+        <div class="column-image-container">
+            <img class="img-border" src="static/assets/empathy-mapping-meetup.PNG">
+        </div>
+    </div>
+</div>
+<section class="section-header" style="text-align:center;">
+    <h2>30/60 Section</h2>
+    <p style="text-align:center;"> This is an example of a component I coded with HTML and CSS that gives the image 30% of the row width and the content 60% of the row width.</p>
+</section>
+<div class="flex-section-reverse" style="background-color:#FFFFFF;">  
+       <div class="column-30">
+        <div class="column-image-container">
+            <img class="img-border" src="static/assets/empathy-mapping-meetup.PNG">
+        </div>
+    </div>
+    <div class="column-60">
+        <div class="column-content">
+            <br>
+            <h2>Column Header</h2>
+            <p>This is a feature module that displays an image on the left and copy on the right.</p>
+            <p>I am using a flexbox layout on all screens larger than 900px. This layout enables the columns to sit side-by-side on larger screens, while also allowing the columns to stack on smaller screen sizes, without needing additional classes and settings. </p>
+            <p>The height and width of this module adjusts to fit the copy and image appropriately.</p>
+        </div>
+    </div>
+</div>
+<section class="flex-section" style="text-align:center">
+    <div class="row-content-container">    
+    <h2>My Specialities</h2>
+    </div>
+<div class="flex-grid">
+  <div class="col"> <h3>Research & Strategy</h3>
+  <img class="img-border" src="static/assets/recruiting-case-study/recruiting.PNG">
+  <br>
+  <br>
+  <p>I can conduct target audience research, competitor research, user tests and interviews to identify key opportunities.</p>
+  </div>
+  <div class="col"><h3>Content Creation</h3>
+  <img class="img-border" src="static/assets/recruiting-case-study/recruiting.PNG">
+  <br>
+  <br>
+  <p>I love writing content and building webpages. I know CSS, HTML, Javascript, Python and SQL.</p>
+  </div>
+  <div class="col"><h3>Content Editing</h3>
+  <img class="img-border" src="static/assets/recruiting-case-study/recruiting.PNG">
+  <br>
+  <br>
+  <p>My attention to detail, coupled with my desire to create exceptional content, make me a phenominal editor.</p>
+</div>
+</section>
+<section class="section-header" style="text-align:center;">
+    <h2>50/50 Section - Left Image</h2>
+    <p style="text-align:center;"> This is an example of a component I coded with HTML and CSS that gives the image 50% of the row width and the content 50% of the row width.</p>
+</section>
+<div class="flex-section-reverse" style="background-color:#FFFFFF;">  
+       <div class="column-45">
+        <div class="column-image-container">
+            <img class="img-border" src="static/assets/block-img.PNG">
+        </div>
+    </div>
+    <div class="column-45">
+        <div class="column-content">
+            <br>
+            <h2>Column Header</h2>
+            <p>This is a feature module that displays an image on the left and copy on the right.</p>
+            <p>I am using a flexbox layout on all screens larger than 900px. This layout enables the columns to sit side-by-side on larger screens, while also allowing the columns to stack on smaller screen sizes, without needing additional classes and settings. </p>
+            <p>The height and width of this module adjusts to fit the copy and image appropriately.</p>
+        </div>
+    </div>
+</div>
+<section class="section-header" style="text-align:center;">
+    <h2>50/50 Section - Right Image</h2>
+    <p style="text-align:center;"> This is an example of a component I coded with HTML and CSS that gives the image 50% of the row width and the content 50% of the row width.</p>
+</section>
+<section class="flex-section" style="background-color:#FFFFFF;">  
+    <div class="column-45">
+        <div class="column-content">
+            <br>
+            <h2>Column Header</h2>
+            <p>This is a feature module that displays an image on the left and copy on the right.</p>
+            <p>I am using a flexbox layout on all screens larger than 900px. This layout enables the columns to sit side-by-side on larger screens, while also allowing the columns to stack on smaller screen sizes, without needing additional classes and settings. </p>
+            <p>The height and width of this module adjusts to fit the copy and image appropriately.</p>
+        </div>
+    </div>
+    <div class="column-45">
+        <div class="column-image-container">
+            <img class="img-border" src="static/assets/block-img.PNG">
+        </div>
+    </div>
+</section>    
+<script async src="static/js/page.js"></script>                    
+{% endblock %}               

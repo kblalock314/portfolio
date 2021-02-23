@@ -1,0 +1,30 @@
+import pandas as pd
+import pyodbc
+pd.set_option('display.width', 500)
+pd.set_option('colheader_justify', 'left')
+pd.set_option('display.max_colwidth',1000)
+
+
+  if request.method == "POST":
+            email = request.form.get('email')
+            name = request.form.get('name')
+            message = request.form.get('message')
+
+            msg = Message(
+                subject=f"Mail from {name}", body=f"Name: {name}\nEmail: {email}\n\n{message}", sender=mail_username, recipients=['katie_blalock@yahoo.com'])
+            mail.send(msg)
+            return render_template("contact.html", form=form, success=True)  
+
+from flask_mail import Mail, Message
+
+mail_username = "katieblalock314@gmail.com"
+mail_password = "Music4life314!"
+
+app.config['MAIL_SERVER'] = "smtp.gmail.com"
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USERNAME'] = mail_username
+app.config['MAIL_PASSWORD'] = mail_password
+
+mail = Mail(app)
+

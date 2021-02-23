@@ -1,0 +1,348 @@
+<section class="section-header" style="text-align:center;">
+    <h2>Feature Component (Right Image)</h2>
+    <p style="text-align:center;"> This is an example of a feature component I coded with HTML and CSS that displays the image on the right.</p>
+</section>
+<div class="section-rightimg" style="background-color:#FFFFFF;">  
+    <div class="column">
+        <div class="column-content">
+            <h2>Column Header</h2>
+            <p>This is a feature module that displays copy on the left and an image on the right.</p>
+            <p>I am using a flexbox layout on all screens larger than 900px. This layout enables the columns to sit side-by-side on larger screens, while also allowing the columns to stack on smaller screen sizes, without needing additional classes and settings. </p>
+            <p>The height and width of this module adjusts to fit the copy and image appropriately.</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="column-image-container">
+            <img class="img-border" src="static/assets/empathy-mapping-meetup.PNG">
+        </div>
+    </div>
+</div>
+<section class="section-header" style="text-align:center;">
+    <h2>Feature Component (Left Image)</h2>
+    <p> This is an example of a feature component I coded with HTML and CSS that displays the image on the left.</p>
+</section>
+<div class="section-leftimg" style="background-color:#FFFFFF;">  
+    <div class="column">
+        <div class="column-image-container">
+            <img class="img-border" src="static/assets/recruiting-case-study/recruiting.PNG">
+        </div>
+    </div>
+<div class="column">
+    <div class="column-content">
+        <h2>Column Header</h2>
+        <p>This is a feature module that displays copy on the left and an image on the left.</p>
+        <p>I am using a flexbox layout on all screens larger than 900px. This layout enables the columns to sit side-by-side on larger screens, while also allowing the columns to stack on smaller screen sizes, without needing additional classes and settings. </p>
+        <p>The height and width of this module adjusts to fit the copy and image appropriately.</p>
+    </div>
+</div>
+</div>
+
+{% extends "index.html" %}
+{% block title %}Modules{% endblock %}
+{% block content %} 
+<div class="hero">
+    <div class="hero-inner">
+        <div>
+            <header class="page-header">
+            <h1> My Resume </h1>
+            </header>
+        </div>
+    </div>    
+</div>
+<section class="flex-section" style="background-color:#FFFFFF;">  
+    <div class="column-60">
+        <div class="column-content">
+            <h2>Professional Experience</h2>
+            <h3>GoDaddy</h3>
+            <p>Marketing Operations Technologist | Apr. 2018 - Present</p>
+            <p> <ul>
+                    <li>Responsible for maintaining and improving 25+ international GoDaddy.com webpages</li>
+                    <li>Collaborate with Product Owners, UX Specialists, Copywriters to implement user tests</li>
+                    <li>Use advanced problem-solving and technical skills to implement page updates & tests</li>
+                    <li>QA GoDaddy.com page updates and user tests for accuracy, functionality, SEO, etc.</li> 
+                    <li>Facilitate team discussions to eliminate silos, iterate quickly and meet deadlines</li>
+                    <li>Use UsabilityHub.com and UserTesting.com to edit and analyze user tests</li> 
+                </ul>    
+            </p>
+                        <h2>Professional Experience</h2>
+            <h3>GoDaddy</h3>
+            <p>Marketing Operations Technologist | Apr. 2018 - Present</p>
+            <p> <ul>
+                    <li>Responsible for maintaining and improving 25+ international GoDaddy.com webpages</li>
+                    <li>Collaborate with Product Owners, UX Specialists, Copywriters to implement user tests</li>
+                    <li>Use advanced problem-solving and technical skills to implement page updates & tests</li>
+                    <li>QA GoDaddy.com page updates and user tests for accuracy, functionality, SEO, etc.</li> 
+                    <li>Facilitate team discussions to eliminate silos, iterate quickly and meet deadlines</li>
+                    <li>Use UsabilityHub.com and UserTesting.com to edit and analyze user tests</li> 
+                </ul>    
+            </p>
+            <br>
+                        <h2>Professional Experience</h2>
+            <h3>GoDaddy</h3>
+            <p>Marketing Operations Technologist | Apr. 2018 - Present</p>
+            <p> <ul>
+                    <li>Responsible for maintaining and improving 25+ international GoDaddy.com webpages</li>
+                    <li>Collaborate with Product Owners, UX Specialists, Copywriters to implement user tests</li>
+                    <li>Use advanced problem-solving and technical skills to implement page updates & tests</li>
+                    <li>QA GoDaddy.com page updates and user tests for accuracy, functionality, SEO, etc.</li> 
+                    <li>Facilitate team discussions to eliminate silos, iterate quickly and meet deadlines</li>
+                    <li>Use UsabilityHub.com and UserTesting.com to edit and analyze user tests</li> 
+                </ul>    
+            </p>
+            <br>
+                        <h2>Professional Experience</h2>
+            <h3>GoDaddy</h3>
+            <p>Marketing Operations Technologist | Apr. 2018 - Present</p>
+            <p> <ul>
+                    <li>Responsible for maintaining and improving 25+ international GoDaddy.com webpages</li>
+                    <li>Collaborate with Product Owners, UX Specialists, Copywriters to implement user tests</li>
+                    <li>Use advanced problem-solving and technical skills to implement page updates & tests</li>
+                    <li>QA GoDaddy.com page updates and user tests for accuracy, functionality, SEO, etc.</li> 
+                    <li>Facilitate team discussions to eliminate silos, iterate quickly and meet deadlines</li>
+                    <li>Use UsabilityHub.com and UserTesting.com to edit and analyze user tests</li> 
+                </ul>    
+            </p>
+        </div>
+    </div>
+    <div class="column-30">
+        <div class="column-image-container">
+            <img src="static/assets/katie-me.PNG">
+        </div>
+    </div>
+</section>
+<section class="banner" style="color:#000000;text-align:center;background-color:#6494AA;">
+    <h1>Want to see some of my work?</h1>
+    <br><br>
+    <button>View My Portfolio</button> 
+</section>
+</div>        
+<section class="flex-section" style="text-align:center">
+    <div class="row-content-container">    
+    <h2>Key Research Findings</h2>
+    </div>
+<div class="flex-grid">
+  <div>
+  <img src="static/assets/recruiting.com-content-strategy/recruiting-challenges.PNG" height="300px">
+  <br>
+  <p>Recruiters are facing many different and specific recruitment challenges.</p>
+  </div>
+  <div>
+  <img src="static/assets/recruiting.com-content-strategy/google-analytics.PNG" height="300px">
+  <br>
+  <p>Recruiting.com's website traffic and lead conversions are slowly declining.</p>
+  </div>
+  <div>
+  <img src="static/assets/recruiting.com-content-strategy/old-marquee.PNG" height="300px">
+  <br>
+  <p>The Recruiting.com site lacks solution-oriented content and only has 3 places to capture leads.</p>
+</div>
+</section>
+<section class="flex-section">
+    <div class="row">
+        <div class="row-content-container">
+            <h2 style="text-align:center;">Key Research Findings</h2>  
+        </div>    
+    </div>
+    <div class="row-image-container">
+        <img src="static\assets\recruiting.com-content-strategy\key-findings.PNG" style="padding-right:20px">
+    </div>
+    <p>INCLUDE ACCORDION OF OTHER FINDINGS HERE</p>
+</section>
+<!--- <section class="flex-section" style="background-color:#FFFFFF;align-items:normal;">  
+    <div class="column-45">
+        <h2>The Mockup</h2>
+        <div class="column-image-container">
+            <img src="static\assets\recruiting.com-content-strategy\the-mockup.PNG">
+        </div>
+    </div>
+    <div class="column-45">
+        <h2>The Wireframe</h2>
+        <div class="column-image-container">
+            <img src="static\assets\recruiting.com-content-strategy\the-wireframe.PNG">
+        </div>
+    </div>
+</section> 
+-->
+
+ <section class="flex-section" style="background-color:#FFFFFF">
+    <div class="row">
+        <div class="row-content-container">
+            <h2 style="text-align:center;">The Results</h2>
+            <p style="text-align:center;">One month after publishing the landing pages, homepage updates, and 20 pieces of new content, we analyzed our project KPIs.</p>
+        </div>    
+    </div>
+ 
+    <div class="flex-grid">
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h1 class="stat">38%</h1>
+                <p>of HP visitors clicked on a challenge</p>
+                    <div class="column-image-container">
+                    <img src="static\assets\recruiting.com-content-strategy\poor-candidate-quality.PNG" class="img-border" style="max-height:200px;">
+                </div> 
+            </div>
+        </div>
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h1 class="stat">23%</h1>
+                <p>of LP visitors filled out a form</p>
+                    <div class="column-image-container">
+                    <img src="static\assets\recruiting.com-content-strategy\form-fill.PNG" class="img-border" style="max-height:200px">
+                </div> 
+            </div>
+        </div>
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h1 class="stat">45%</h1>
+                <p>increase in leads in 30 days</p>
+                    <div class="column-image-container">
+                    <img src="static\assets\recruiting.com-content-strategy\lead-form.PNG" class="img-border" style="max-height:200px">
+                </div> 
+            </div>    
+        </div>
+    </div>    
+    <div class="row">
+        <div class="row-content-container"> 
+        <p style="text-align:center;padding-top:40px;">These insights verified that our new content was indeed engaging and converting more website visitors. It also revealed that most of our visitors are dealing with poor candidate quality because that challenge received the most clicks on the homepage and the most landing page views. As a result, I began creating more supporting content for this challenge to capitalize on this opportunity.  </p>
+        </div>
+    </div>    
+</section>
+
+
+
+Decrease bounce rates and abandon cart rates on the Web Hosting page by optimizing the plan box module that displays pricing.
+
+I am a Web Content Strategist, Creator and Editor. I am passionate about using content to build brands and user-friendly websites. To learn more about my skills and experience, explore my portfolio.
+
+ <p style="text-align:center;">Once we finished designing and building the first landing page, we repurposed the page layout for the other three landing pages:</p>
+        <div class="row-image-container">
+        <img src="static\assets\recruiting.com-content-strategy\more-pages.PNG" style="max-height:400px;">
+    </div>
+</section>
+<section class="flex-section" style="background-color:#FFFFFF;">
+    <div class="row">
+        <div class="row-content-container">
+            <h2 style="text-align:center;">Step 2: Optimize the Homepage</h2>  
+<p style="text-align:center;margin-bottom:0px;">I edited the homepage marquee copy to make it more informative and solution-focused. I also updated the marquee imagery and layout to feature a Recruiting.com career site so that new visitors could better understand and see the product we offer.
+        </div>    
+    </div>
+    <div class="column-45">
+        <h3 style="text-align:center;padding-top:30px;">Before</h3>  
+        <div class="column-image-container">
+            <img class="img-border-shadow" src="static/assets/recruiting.com-content-strategy/before.PNG" style="width:100%;max-height:400px">
+        </div>
+    </div>
+    <div class="column-45">
+        <h3 style="text-align:center;padding-top:30px;">After</h3> 
+        <div class="column-image-container"> 
+            <img class="img-border-shadow" src="static/assets/recruiting.com-content-strategy/after.PNG" style="width:100%;max-height:400px">
+        </div>
+    </div>
+    <br>
+    <div class="row-content-container">
+    <p style="text-align:center;padding-top:30px;">Next, I created a new section right below the homepage marquee that encourages users to segment themselves. After they click on their biggest recruiting challenge, they are directed to the landing page that best resonates with them and offers a clear solution to their unique problem.</p>
+    </div>
+    <div class="row-image-container">
+        <img class="img-border-shadow" src="static\assets\recruiting.com-content-strategy\segment-users2.PNG" style="max-height:400px">
+    </div>
+    <div class="row">    
+    </div>
+</section>       
+
+        <div class="flex-grid">
+        <div class="col-centered">
+            <div class="column-title-img"> 
+                <h2 class="stat">14%</h2>
+                <p>decrease in organic bounce rate</p>
+                <div class="column-image-container">
+                    <img src="static/assets/valley-chevy/organic-traffic.PNG" style="width:100%;max-height:300px">
+                </div>                
+            </div>
+        </div>
+        <div class="col-centered">
+            <div class="column-title-img"> 
+                <h2 class="stat">32%</h2>
+                <p>increase in Locate Dealer page visits</p>
+                <div class="column-image-container">
+                    <img src="static/assets/valley-chevy/locate-dealer.PNG" style="width:100%;max-height:300px">
+                </div>  
+            </div>
+        </div>
+        <div class="col-centered">
+            <div class="column-title-img"> 
+                <h2 class="stat">137%</h2>
+                <p>increase in form fill completions</p>
+                <div class="column-image-container">
+                    <img src="static/assets/valley-chevy/min-form-fill.PNG" style="width:100%;max-height:300px">
+                </div>  
+            </div>    
+        </div>
+    </div>    
+    <div class="row">
+        <div class="row-content-container">
+            <p style="text-align:center;padding-top:30px;margin-bottom:0rem">Because our results were so positive, we continued to execute this content strategy every month until we produced content for every Chevrolet model that Valley Chevy sells. Most of this content is still live on the site today!</p>
+        </div>    
+    </div>
+</section> 
+
+ <section class="flex-section" style="background-color:#FFFFFF">
+    <div class="row">
+        <div class="row-content-container">
+            <h2 style="text-align:center;">The Results</h2>
+            <p style="text-align:center;padding-bottom:30px"></p>
+            <br>
+        </div>    
+    </div> 
+    <div class="flex-grid">
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h1 class="stat">22%</h1>
+                <p>decrease in bounce rate</p>
+            </div>
+        </div>
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h1 class="stat">41%</h1>
+                <p>increase in avg. time on site
+            </div>
+        </div>
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h1 class="stat">18%</h1>
+                <p>increase in hosting product sales</p>
+            </div>    
+        </div>
+</section>
+<section class="col-section-padding" style="background-color:#FFFFFF;">  
+    <div class="column-60">
+        <div class="column-content" style="margin-left:0px;max-width:700px">
+          <h2>Step 4: Q & A</h2>
+            <p>After we brainstormed a few more marketing ideas, we ended the workshop and opened the floor to questions. Some questions we received included:</p>
+            <ul class="ul-bullets" style="line-height:1.2;list-style-position:inside;">
+                <li>How long should you spend on developing your personas?</li>
+                <li>How do you eliminate bias during empathy mapping?</li>
+                <li>How do you get stakeholder buy-in for empathy mapping?</li> 
+            </ul>
+            <p style="margin-bottom:0px">Together, Tony and I were able to answer these questions effectively and provide attendees with actionable tips for success. If you would like to know how we answered them, ask me!</p>
+        </div>
+    </div> 
+    <div class="column-30">
+        <div class="column-image-container">
+            <img class="img-border" src="static\assets\empathy-mapping\questions.jpg">
+        </div>
+    </div>
+</section>
+<section class="col-section-padding" style="background-color:#FFFFFF;">  
+    <div class="column-30">
+        <div class="column-image-container">
+            <img class="img-border" src="static\assets\empathy-mapping\empathy-mapping-meetup.PNG">
+        </div>
+    </div>
+    <div class="column-60">
+        <div class="column-content" style="padding-bottom:0px;">
+          <h2>My Key Takeaways</h2>
+           <p>The thing that interested me most during this workshop is how each group decided to complete their empathy map. Some groups had very unique and creative strategies that provided immense value. For example, one group realized that their persona played a few distinct roles such as teacher, mother, and entrepreneur. To ensure that they were considering all of these different roles during each portion of the empathy map, they made each team member a spokesperson for a particular role. I thought this was a useful way to consider all of the persona’s dynamics while completing the empathy map.</p>
+            <p style="margin-bottom:0px">Another thing that surprised me during this activity is how hesitant our attendees were to make assumptions about their personas. Many attendees felt that it wasn’t fair to assume anything about their persona because it could be biased or inaccurate. Tony and I understood this concern, and it was definitely valid, but we reminded attendees that because this is a mock workshop to practice the empathy mapping process, it is okay to assume things. However, in a real empathy mapping exercise, it is definitely recommended that you invest more time into primary research and secondary research to minimize assumptions and bias.</p>
+        </div>
+    </div>
+</section> 

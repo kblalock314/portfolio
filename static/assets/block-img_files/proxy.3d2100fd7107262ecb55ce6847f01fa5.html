@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0143)https://cdn.krxd.net/partnerjs/xdi/proxy.3d2100fd7107262ecb55ce6847f01fa5.html#!kxcid=ux5pjwjr7&kxt=https%3A%2F%2Fwww.godaddy.com&kxcl=cdn&kxp= -->
+<html><script type="text/javascript" src="./d3f5ea67-4486-480d-a551-8cc4bc815ae7"></script><script async="" src="./controltag.js.e4cdf7ad64ebac73f207c1ce55cc1727"></script><script type="text/javascript" async="" src="./ux5pjwjr7.js.download"></script><script type="text/javascript" class="__REQUESTLY__SCRIPT">(function(namespace) {
+  window[namespace] = window[namespace] || {};
+  window[namespace].responseRules = {};
+
+  let open = XMLHttpRequest.prototype.open;
+  XMLHttpRequest.prototype.open = function(method) {
+    this.addEventListener('readystatechange', function() {
+      if (this.readyState === 4 && window[namespace].responseRules.hasOwnProperty(this.responseURL)) {
+        const responseRule = window[namespace].responseRules[this.responseURL];
+        const {response, id} = responseRule;
+        const responseType = this.responseType;
+        let customResponse;
+
+        customResponse = response.type === 'code' ? responseRule.evaluator({
+            method,
+            url: this.responseURL,
+            requestHeaders: this.requestHeaders,
+            requestData: this.requestData,
+            responseType: this.responseType,
+            response: this.response
+          }) : response.value;
+
+        Object.defineProperty(this, 'response', {
+          get: function () {
+            if (response.type === 'static' && responseType === 'json') {
+              return JSON.parse(customResponse);
+            }
+            return customResponse;
+          }
+        });
+
+        if (responseType === '' || responseType === 'text') {
+          Object.defineProperty(this, 'responseText', {
+            get: function () {
+              return customResponse;
+            }
+          });
+        }
+
+        window.postMessage({
+          from: 'requestly',
+          type: 'response_rule_applied',
+          id
+        }, window.location.href);
+      }
+    }, false);
+    open.apply(this, arguments);
+  };
+
+  let send = XMLHttpRequest.prototype.send;
+  XMLHttpRequest.prototype.send = function(data) {
+    this.requestData = data;
+    send.apply(this, arguments);
+  };
+
+  let setRequestHeader = XMLHttpRequest.prototype.setRequestHeader;
+  XMLHttpRequest.prototype.setRequestHeader = function(header, value) {
+    this.requestHeaders = this.requestHeaders || {};
+    this.requestHeaders[header] = value;
+    setRequestHeader.apply(this, arguments);
+  }
+})('__REQUESTLY__')</script><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Proxy</title>
+  <script data-version="2">
+    window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]),Krux("proxy"),function(){var t=function(t){for(var r=t.split("&"),e={},n=0,c=r.length;c>n;++n){var i=r[n].split("=");e[i[0]]=i[1]}return e},r=/^[a-z0-9_-]+$/i,e=window.location.hash,n=t(e.slice(e.indexOf("!")+1));if(!n.kxcid||!r.test(n.kxcid))throw new Error("Invalid confid passed to proxy");n.kxcl&&r.test(n.kxcl)||(n.kxcl="cdn"),n.kxp&&/^[0-9]{1,5}$/.test(n.kxp)||(n.kxp="");var c=document.createElement("script");c.type="text/javascript",c.async=!0,c.src="//"+n.kxcl+".krxd.net"+(n.kxp?":"+n.kxp:"")+"/controltag/"+n.kxcid+".js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(c,i)}();
+  </script>
+</head><body>
+
+</body></html>

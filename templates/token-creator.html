@@ -1,0 +1,69 @@
+{% extends "index.html" %}
+{% block title %}Token Creator{% endblock %}
+{% block content %} 
+<section class="hero">
+    <div class="hero-inner">
+        <div>
+            <header>
+                <h1 class="page-header">Automating URL Tokens for Internal Use</h1>
+            </header>
+        </div>
+    </div>    
+</section>
+<section class="col-section"> 
+    <div class="flex-grid">
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h3>The Project</h3>
+                <p style="margin-bottom:0px;">I created an internal tool that automates the process of turning URLs into the tokens that GoDaddy's Marketing and Operations team (MOps) regularly uses in GoDaddy's CMS.</p>
+            </div>
+        </div>
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h3>Purpose</h3>
+                <p style="margin-bottom:0px;">This tool makes it easier and faster for the MOps team to create URL tokens, and reduces the potential of link bugs on GoDaddy.com.</p>
+            </div>
+        </div>
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h3>My Role</h3>
+                <p style="margin-bottom:0px;">HTML, CSS, Python, UI design, back-end development, input validation</p>
+            </div>    
+        </div>
+</section>
+<section class="banner" style="background-color:#FFFFFF">
+	<div class="row-content-container">
+        <div class="column-text-block">
+            <h2>The Tool</h2>
+        </div>
+    </div>   
+    <h3>For relevant link tokens only</h3>
+	<form action="#" method="post">
+		<p>Please enter the URL you would like to tokenize</p>
+		<p><input type="text" name="response" /></p>
+		<p><input type="Submit" value="Submit"/></p>
+	</form>
+<br>
+{% with messages = get_flashed_messages() %}
+	{% if messages %}
+		{% for message in messages %}
+			<h3>{{ message }}</h3>
+		{% endfor %}
+	{% endif %}
+{% endwith %}
+</section>
+<section class="col-section-padding" style="background-color:#F1F1F1">
+    <div class="row-content-container">
+        <div class="column-text-block">
+            <h2 style="text-align:center;">The Code</h2>
+        </div>
+    </div>    
+    <div class="row-image-container">
+        <img src="static\assets\token-creator\python-code.PNG" style="max-height:1200px">
+    </div>
+</section>
+<section class="banner">
+    <h1 class="banner-text">Want to see more projects?</h1>
+    <a href="/portfolio"><button>View My Portfolio</button></a> 
+</section> 
+{% endblock %}

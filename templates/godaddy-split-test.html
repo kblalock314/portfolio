@@ -1,0 +1,150 @@
+{% extends "index.html" %}
+{% block title %}GoDaddy Split Test{% endblock %}
+{% block content %} 
+<section class="hero">
+    <div class="hero-inner">
+        <div>
+            <header>
+            <h1 class="page-header">Increasing Product Sales for GoDaddy</h1>
+            </header>
+        </div>
+    </div>    
+</section>
+<section class="col-section"> 
+    <div class="flex-grid">
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h3>The Project</h3>
+                <p style="margin-bottom:0px;">I worked with desginers, writers and developers to design and test a new module component that would help us convert more visitors.</p>
+            </div>
+        </div>
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h3>Purpose</h3>
+                <p style="margin-bottom:0px;">This new component ultimately decreased abandon cart rates and increased Business Hosting product sales on GoDaddy.com.</p>
+            </div>
+        </div>
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h3>My Role</h3>
+                <p style="margin-bottom:0px;">Prototyping, split test implementation, user testing, website editing, troubleshooting, quality assurance</p>
+            </div>    
+        </div>
+</section>
+<section class="col-section-padding" style="background-color:#FFFFFF;">  
+    <div class="column-50">
+        <div class="column-content" style="padding-bottom:0px">
+            <h2>The Challenge</h2>
+            <p style="margin-bottom:0px">On GoDaddy’s original Business Hosting page, there was a plan box module that presented four different Business Hosting tiers and prices to choose from. However, when you click “Add to Cart”, you are taken to a product configure page that gives you four different term lengths to choose from, and each term length changes the price of each tier. User videos revealed that this setup made it difficult for our customers understand and compare all of the different Business Hosting pricing options. 
+            As a result, most customers were getting overwhelmed and abandoning their carts.</p>
+        </div>
+    </div>
+    <div class="column-50-image">
+        <div class="column-image-container">
+            <img src="static/assets/godaddy-hosting-sales/control-side.PNG" class="img-border-shadow" style="margin:0;">
+        </div>
+    </div>
+</section>
+<section class="col-section-padding-reverse-stack" style="background-color:#F1F1F1;">  
+    <div class="column-50-stack-image">
+        <div class="column-image-container-stack">
+            <img src="static/assets/godaddy-hosting-sales/dreamhost.PNG" class="img-border-shadow" style="margin:0;">
+        </div>
+    </div>
+    <div class="column-50-stack-center">
+        <div class="column-content" style="padding-bottom:0px">
+            <h2>The Hypothesis</h2>
+            <p>During a working session, my team and I put ourselves in the shoes of our customers to brainstorm a better way to display GoDaddy’s Business Hosting tiers and term lengths. We researched how our competitors displayed their prices, considered new module features, and discussed what matters most to our customers when they are purchasing Web Hosting.</p>
+            <p style="margin-bottom:0px">45 minutes later, we came to a consensus that we should add an interactive “term flipper” above the plan boxes. We saw this feature on some of our competitor's websites, such as Dreamhost (featured in screenshot on the left). We loved that when visitors click on a term above the table, they can see the prices for each tier change. They can click on the terms as many times as they want to compare prices before selecting one. We hypothesized that by making the plan box module more interactive and cohesive in this way, we could decrease abandon cart rates and increase product sales.</p>
+        </div>
+    </div>
+</section>
+<section class="col-section-padding" style="background-color:#FFFFFF">
+    <div class="row-content-container">
+        <div class="column-block-20px">
+            <h2>Step 1: Mock Up The New Module</h2>
+            <p>Before we started to build anything, our UX designer created a mockup of the new module design to ensure we were all envisioning the same component. Our copywriter also reveiwed the copy in the mockup and made a couple strategic copy updates to better engage website vistors.</p> 
+        </div>
+    </div>    
+    <div class="row-image-container">
+        <img src="static\assets\godaddy-hosting-sales\b-side-mockup3.PNG">
+    </div> 
+</section>
+<section class="col-section-padding">
+    <div class="row-content-container">
+        <div class="column-block-20px">
+            <h2>Step 2: Develop the Term Flipper</h2>
+            <p>Next, I worked with our developers to build the new term flipper component with HTML, CSS and Javascript. This process involved providing the devs with the ideal specs for each breakpoint, outlining what editing capabilities should be available in the component, and testing out the new component in Sitecore (GoDaddy's CMS) to ensure it worked properly.</p>     
+        </div>
+    </div>
+    <div class="row-image-container">
+        <img src="static\assets\godaddy-hosting-sales\planbox-details.PNG" style="max-width:100%;">
+    </div>    
+</section>
+<section class="col-section-padding" style="background-color:#FFFFFF">
+    <div class="row-content-container">
+        <div class="column-block-20px">
+            <h2>Step 3: Build the Module and Split Test</h2>
+            <p>Once the dev work was complete, I built the B side of our split test in Sitecore. I also created a new split test in Redpoint and added the proper rules to the module so that the B side version would show 50% of the time. After one of my peers tested my split test in the preview envrionment, I published my work.</p>  
+        </div>    
+    </div>
+    <div class="row-image-container">
+            <img src="static\assets\godaddy-hosting-sales\split-test-setup2.PNG">
+    </div>
+</section>
+<section class="col-section-padding" style="background-color:#F1F1F1;">  
+    <div class="column-50" style="margin:0 auto;">
+        <div class="column-content">
+            <br>
+            <h2>Step 4: Iterate on the Split Test</h2>
+            <p>In order to gain qualitative feedback on our split test, our UX designer published the split test in UserTesting.com. After collecting 10 user videos, we analyzed them together as a team.</p> 
+            <p style="margin-bottom:0px;">Overall, the videos revealed that most users enjoyed interacting with the term flipper and better understood the different pricing options. However, most users were still overwhelmed by the amount of options available, and zero users expressed interest in the 2-year or 3-year plans. Multiple users also mentioned that the 30-day money back gaurantee statement was "random and distracting". We decided to make some tweaks to the B side based on this feedback in hopes of optimizing our results.</p>
+        </div>
+    </div>
+    <div class="column-50-image">
+        <div class="column-image-container">
+            <img src="static\assets\godaddy-hosting-sales\module-revisions.PNG" class="img-border-shadow">
+        </div>
+    </div>
+</section>    
+<section class="col-section-padding" style="background-color:#FFFFFF">
+    <div class="column-text-block">
+        <div class="row-content-container">    
+            <h2>The Results</h2>
+            <p style="margin-bottom:0px">3 weeks later, we analyzed our KPIs to see if our test had reached statistical significance. The data revealed that the B side was significantly outperforming the control side, so we deemed the B side as the winner, ended our split test, and implemented the B side as the control.</p>
+        </div>
+    </div>    
+<div class="flex-grid">
+    <div class="col-centered"> 
+        <h3 class="stat">22%</h3>
+        <p class="stat-text">decrease in abandon cart rates</p>
+        <div class="column-block-30px">
+            <img src="static\assets\icons\cart-icon.PNG" class="stat-icon">
+        </div>
+    </div>
+    <div class="col-centered">
+        <h3 class="stat">41%</h3>
+        <p class="stat-text">increase in avg. time on site</p>
+        <div class="column-block-30px">
+            <img src="static\assets\icons\clock-icon.PNG" class="stat-icon">
+        </div>
+    </div>
+    <div class="col-centered">
+        <h3 class="stat">18%</h3>
+        <p class="stat-text">increase in product sales</p>
+        <div class="column-block-30px">
+            <img src="static\assets\icons\credit-card-icon.PNG" class="stat-icon">
+        </div>
+    </div>
+</div>
+    <div class="column-content-block">
+        <div class="row-content-container">    
+            <p style="margin-bottom:0px;">A week later, I demoed our split test and its results in a popular front-of-site demo meeting. When other GoDaddy.com teams learned about this new term flipper component and its effectiveness, they decided to implement it on some of their pages too. Now, even today, you can find the term flipper being used on many prominent GoDaddy.com webpages. </p>
+        </div> 
+    </div>    
+</section>
+<section class="banner">
+    <h1 class="banner-text">Want to see more projects?</h1>
+    <a href="/portfolio"><button>View My Portfolio</button></a> 
+</section>     
+{% endblock %}       

@@ -1,0 +1,89 @@
+{% extends "index.html" %}
+{% block title %}Module Prototype{% endblock %}
+{% block content %} 
+<section class="hero">
+    <div class="hero-inner">
+        <div>
+            <header>
+            <h1 class="page-header">Prototyping a Flexbox Module</h1>
+            </header>
+        </div>
+    </div>    
+</section>
+<section class="col-section"> 
+    <div class="flex-grid">
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h3>The Project</h3>
+                <p style="margin-bottom:0px;">I used a CSS flexbox layout to build a prototype of a fully responsive new module in Sitecore, GoDaddy's CMS.</p>
+            </div>
+        </div>
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h3>Purpose</h3>
+                <p style="margin-bottom:0px;">We can use this new module on any GoDaddy page to help visitors easily compare two GoDaddy products on any device.</p>
+            </div>
+        </div>
+        <div class="col-centered">
+            <div class="column-content-block"> 
+                <h3>Skills</h3>
+                <p style="margin-bottom:0px;">HTML, CSS, responsive web design, prototyping, front-end development, troubleshooting, quality assurance</p>
+            </div>    
+        </div>
+</section>
+<section class="col-section-padding" style="background-color:#FFFFFF">
+    <div class="row-content-container">
+        <div class="column-block-20px">
+            <h2>Step 1: Build the Prototype</h2>
+            <p>After my UX designer and copywriter provided me with a mockup of the new prototype they wanted to test on GoDaddy's Website Builder page, I used GoDaddy's flexbox prototyping tool to build the prototype in Sitecore. Because I was only given a mockup for the Desktop breakpoint, I used my design skills to determine the specs for the other breakpoints myself.</p> 
+        </div>
+    </div>         
+    <div class="row-image-container">
+        <img src="static\assets\modules\desktop-and-mobile.PNG" style="max-height:600px;">
+    </div>
+    <div class="row-image-container">
+        <img src="static\assets\modules\ipad-iphone3.PNG" style="max-height:600px;">
+    </div>    
+</section>
+<section class="col-section-padding" style="background-color:#FFFFFF;padding-top:0px">
+        <div class="column-50-image">
+        <h3 style="text-align:center;">Sitecore Snapshot</h3>  
+        <div class="column-image-container">
+            <img class="img-border-shadow" src="static/assets/modules/flexbox-sitecore-view.PNG">
+        </div>
+    </div>
+    <div class="column-50-image">
+        <h3 style="text-align:center;">DOM Snapshot</h3> 
+        <div class="column-image-container"> 
+            <img class="img-border-shadow" src="static/assets/modules/flexbox-code-view.PNG">
+        </div>
+    </div>
+</section>
+<section class="col-section-padding" style="background-color:#F1F1F1">
+    <div class="row-content-container">
+        <div class="column-block-20px">
+            <h2>Step 2: Conduct Qualitative User Testing</h2>
+            <p>After I finished building and testing the prototype on all breakpoints, I duplicated GoDaddy's Website Builder page layout onto a no-index, no-follow page, added our prototype onto the layout, and published the page. Next, my UX designer set up a test in UserTesting.com to get user feedback on the updated page layout and the prototype. Here are the two key highlights from the user videos: </p> 
+        </div>
+    </div>    
+    <div class="column-50-image" style="padding-bottom:30px">
+        <iframe class="user-testing-block" src="https://player.vimeo.com/video/450547655" frameborder="1" border="1px #000000 solid" box-shadow="2px 2px #DCDCDC" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="column-50-image" style="padding-bottom:30px">
+        <iframe class="user-testing-block" src="https://player.vimeo.com/video/450547655" frameborder="1" border="1px #000000 solid" box-shadow="2px 2px #DCDCDC" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+</section>
+<section class="col-section-padding" style="background-color:#FFFFFF">
+    <div class="row-content-container">
+        <div class="column-block-20px">
+            <h2>Step 3: Turn the Prototype into a Module</h2>
+            <p>Once we confirmed that our users found my prototype valuable, I worked with our developers to turn it into a fully scalable, user-friendly Sitecore module. This step enables anyone on my team to use this module on any GoDaddy.com page in all 56 markets, and with any copy and icons they desire.</p> 
+            <p style="margin-bottom:0px;">This new module is currently still being built, but it should be completed soon. I will update this page when the final product is available! </p>
+        </div>
+    </div>    
+</section>
+<section class="banner">
+    <h1 class="banner-text">Want to see more projects?</h1>
+    <a href="/portfolio"><button>View My Portfolio</button></a> 
+</section>  
+{% endblock %}

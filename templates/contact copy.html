@@ -1,0 +1,47 @@
+{% extends "index.html" %}
+{% block title %}Contact{% endblock %}
+{% block content %} 
+<section class="hero">
+    <div class="hero-inner">
+        <div>
+            <header>
+            <h1 class="page-header">Contact Me</h1>
+            </header>
+        </div>
+    </div>    
+</section>
+<section class="col-section-padding" style="background-color:#FFFFFF;">  
+    <div class="column-50">
+        <div class="column-image-container" style="padding-top:0px">
+            <img src="static/assets/contact/katie.jpg" style="border-radius:5px" >
+        </div>
+    </div>
+    <div class="column-50">
+        <h2 style="text-align:center">Let's work together!</h2>
+        <p style="max-width:400px;margin:auto;text-align:center">Have questions for me? Fill out the email form here or email me at katie_blalock@yahoo.com.
+        <br>
+        <br>
+        <div class="column-image-container">
+            <div style="border-radius:5px;background-color:#f2f2f2;padding:20px;border: solid 1px #65696cff;">
+                <form name="form" method="post">
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email" placeholder="Your best email">
+                
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Your first and last name">
+
+                    <label for="message">Subject</label><br>
+                    <textarea id="message" name="message" placeholder="Your reason for contacting me" style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <br>
+        {% if success %}
+        <div class="alert alert-success " style="max-width:430px;margin:auto;text-align:center" role="alert">Your message has been sent!</div>
+        {% endif %}
+
+    </div>    
+</section>
+{% endblock %}

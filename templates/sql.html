@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block title %}SQL{% endblock %}
+<body><span class="content">
+{% block content %}
+<br>
+<br>
+<h1>Team Data</h1>
+<div>
+<span>{{ table.to_html(classes="table table-striped sqltable") | safe }}</span>
+</div>
+</span>
+</body>
+{% endblock %}

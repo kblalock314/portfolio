@@ -1,0 +1,110 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/styles/resetstyle.css" />
+    <link rel="stylesheet" type="text/css" href="static/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="static/styles/page.css" />
+    <link rel="stylesheet" type="text/css" href="static/styles/nav.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style> @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap');</style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="content strategist, content strategy, web designer, copywriter, content editor, UX, SEO, portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	<meta name="description" content="Katie Blalock's portfolio - A collection of my experience as a Content Strategist" />
+
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+</head> 
+<body> 
+<nav class="nav-main">
+    <div class="site-header">
+        <h2> Katie Blalock's Portfolio </h2>
+        <p class="d-none d-sm-block">A collection of my work experience, projects and career accomplishments.</p>    
+    </div> 
+    <div class="btn-toggle-nav" onclick="toggleNav()"><img src="static/assets/icons/menu3.PNG" alt="menu" width=60px height=60px/></div>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li class="d-none d-md-block"><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/resume">Resume</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>   
+</nav>
+<div class="page"> 
+<aside class="nav-sidebar">
+    <ul>
+        <a href="/portfolio"><li style="font-weight:800;"><span style="opacity:1">Projects</span></li></a>
+        <li><a href="/empathy-mapping">Empathy Mapping</a></li>
+		<li><a href="/godaddy-split-test">Split Testing</a></li>
+		<li><a href="/valley-chevy-content-strategy">Content Strategy</a></li>
+		<li><a href="/recruiting-content-strategy">Content Creation</a></li>
+		<li><a href="/module-prototype">Front-End Development</a></li>
+		<li><a href="/token-creator">Back-End Development</a></li>
+    </ul>
+</aside>
+<title>{% block title %} {% endblock %}</title> 
+<div class="content-plus-footer">
+<div class="content">
+{% block content %}{% endblock %}  
+<footer class="footer-distributed">
+ 
+		<div class="col-left">
+        <div class="footer-left-content">
+		<h3>Katie Blalock</h3>
+ 
+		<p class="footer-links">
+		<a href="/">Home</a>
+	·
+		<a href="/resume">Resume</a>
+	·
+		<a href="/portfolio">Portfolio</a>
+	·
+		<a href="/contact">Contact</a>
+		</p>
+        </div>
+		</div>
+ 
+		<div class="col-center">
+        <div class="footer-center-content">
+		<div>
+		<i class="fa fa-map-marker"></i>
+		<p>Phoenix, AZ</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-phone"></i>
+		<p>+1-480-505-8800</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-envelope"></i>
+		<p><a href="mailto:katie_blalock@yahoo.com">katie_blalock@yahoo.com</a></p>
+		</div>
+        </div>
+		</div>
+ 
+		<div class="col-right">
+        <div class="footer-right-content">
+		<p class="footer-company-about" style="max-width:320px">
+		<span>About me</span>
+	    I am a content strategist who loves coding, writing and editing website content.
+		</p>
+ 
+		<div class="footer-icons">
+ 
+		<a href="https://www.linkedin.com/in/katie-blalock/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/katie.blalock.7/" target="_blank"><i class="fa fa-facebook"></i></a>
+ 
+		</div>
+        </div>
+		</div>
+ 
+	</footer>
+</div>
+</div>
+</div>
+</body>
+<script src="static/js/nav.js"></script>
+</html>    
